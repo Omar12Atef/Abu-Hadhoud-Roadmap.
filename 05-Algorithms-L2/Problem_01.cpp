@@ -15,6 +15,7 @@ void PrintHeader()
 
 }
 
+
 string ColumnSeperator(int i)
 {
     if (i<10)
@@ -48,7 +49,6 @@ int main()
 {
 
     PrintMultiplicationTaple() ;
-
 
     return 0;
 }
