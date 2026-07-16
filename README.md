@@ -14,7 +14,7 @@ Below is a structured overview of the courses I have completed and what I am cur
 | **02 - Algorithms & Problem-Solving Level 1** | ✅ Completed | — |
 | **03 - Introduction to Programming with C++ – Level 1** | ✅ Completed | — |
 | **04 - Algorithms & Problem-Solving – Level 1 (Solutions)** | ✅ Completed | — |
-| **05 - Algorithms & Problem-Solving – Level 2** | ⏳ In Progress | [Explore Code](./05-Algorithms-L2) |
+| **05 - Algorithms & Problem-Solving – Level 2** | ⏳ In Progress | [View Solutions](./05-Algorithms-L2) |
 
 ---
 
