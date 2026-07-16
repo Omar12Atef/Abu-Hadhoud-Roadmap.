@@ -14,23 +14,26 @@ int ReadPositiveNumber(string Message)
     return Number ;
 }
 
-void ReverseNumber(int Number)
+int ReverseNumber(int Number)
 {
     int reminder = 0 ;
+    int Number2 = 0 ;
 
     while (Number > 0)
     {
         reminder = Number % 10 ;
         Number = Number / 10 ;
-        cout << reminder ;
+        Number2 = Number2 * 10 + reminder ;
     }
+
+    return Number2 ;
 }
 
 
 int main() 
 {
 
-    ReverseNumber(ReadPositiveNumber("Enter The Number?")) ;
+    cout << ReverseNumber(ReadPositiveNumber("Enter The Number?")) ;
 
     return 0;
 }
