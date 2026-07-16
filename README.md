@@ -10,7 +10,7 @@ Below is a structured overview of the levels and topics I am working through. Yo
 
 | Level / Topic | Description | Status | Folder Link |
 | :--- | :--- | :--- | :--- |
-| **Level 1: Programming Foundations** | Introduction to C++ syntax, variables, loops, functions, and basic structures. | ✅ Completed | [Explore Code](./) |
+| **Level 1: Programming Foundations** | Introduction to C++ syntax, variables, loops, functions, and basic structures. | ✅ Completed
 | **Level 2: Algorithms & Problem Solving** | Deep dive into computational logic, arrays, matrices, and advanced algorithmic thinking. | ⏳ In Progress | [Explore Code](./05-Algorithms-L2) |
 
 ---
