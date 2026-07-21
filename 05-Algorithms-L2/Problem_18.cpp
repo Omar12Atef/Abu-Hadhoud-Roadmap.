@@ -10,6 +10,7 @@ string ReadName()
     return Name ;
 }
 
+
 string Encryption(string Name , short EncryptionKey)
 {
     for (int i=0 ; i< Name.length() ; i++)
@@ -20,6 +21,7 @@ string Encryption(string Name , short EncryptionKey)
     return Name ;
 }
 
+
 string Decryption(string Name , short EncryptionKey)
 {
     for (int i=0 ; i< Name.length() ; i++)
@@ -29,6 +31,7 @@ string Decryption(string Name , short EncryptionKey)
 
     return Name ;
 }
+
 
 int main() 
 {
