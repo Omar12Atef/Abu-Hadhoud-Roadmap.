@@ -21,12 +21,20 @@ int ReadPositiveNumber(string Message)
     return Number ;
 }
 
+void FillArrayWithRandomNumbers(int arr[100] , int ArrLength)
+{
+    for (int i = 0 ; i < ArrLength ; i++)
+    {
+        arr[i] = RandomNumber(1 , 100) ;
+    }
+}
+
 
 void PrintArray(int arr[100] , int ArrLength)
 {
-    for (int i = 0 ; i < ArrLength ; i++ )
+    for (int i = 0 ; i < ArrLength ; i++)
     {
-        arr[i] = RandomNumber(1 , 100) ;
+        
         cout << arr[i] << " " ;
     }
 }
@@ -40,6 +48,7 @@ int main()
     int arr[100] , ArrLength ;
 
     ArrLength = ReadPositiveNumber("Enter The length of array : ") ;
+    FillArrayWithRandomNumbers(arr , ArrLength) ;
 
     cout << "Array Elements : " ;
     PrintArray(arr , ArrLength) ;
