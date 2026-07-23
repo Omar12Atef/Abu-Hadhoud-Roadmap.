@@ -66,7 +66,7 @@ int main()
     cout << "Array Elements : " ;
     PrintArray(arr , ArrLength) ;
 
-    cout << "\nMax Element in Array is : " << MinElementOfArray(arr , ArrLength) ;
+    cout << "\nMin Element in Array is : " << MinElementOfArray(arr , ArrLength) ;
 
 
 
