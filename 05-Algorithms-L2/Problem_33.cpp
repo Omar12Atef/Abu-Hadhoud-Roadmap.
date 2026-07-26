@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-enum enCharType { CapitalLetter=1 , SmallLetter=2 , SpecialLetter=3 , Digit=4} ;
+enum enCharType { CapitalLetter=1 , SmallLetter=2 , SpecialLetter=3 , Digit=4 } ;
 
 int ReadPositiveNumber(string Message)
 {
@@ -18,7 +18,8 @@ int ReadPositiveNumber(string Message)
 
 int RandomNumber(int From , int To)
 {
-    int random = rand() % (To - From + 1) + From ;
+    int random = rand() % (From - To + 1) + From ;
+
     return random ;
 }
 
@@ -71,50 +72,46 @@ string GenerateKey()
 {
     string key = "" ;
 
-    for (int i=1 ; i<=4 ; i++)
+    for (int i = 1 ; i <= 4 ; i++)
     {
         key = key + GenerateWord(CapitalLetter , 4) ;
 
         if (i < 4)
+        {
             key = key + "-" ;
+        }
     }
+
 
     return key ;
 }
 
-void FillArrayWithKeys(string arr[100] , int arrlength)
+void FillArrayWithKeys(string arr[100] , int arrLength)
 {
-    for (int i = 0 ; i < arrlength ; i++)
+    for (int i = 0 ; i < arrLength ; i++)
     {
         arr[i] = GenerateKey() ;
     }
 }
 
-void PrintStringArray(string arr[100] , int arrlength)
+void PrintArray(string arr[100] , int arrLength)
 {
-    cout << "Array Elements : \n\n" ;
-    
-    for (int i = 0 ; i < arrlength ; i ++)
+    for (int i = 0 ; i < arrLength ; i++)
     {
-        cout << "Array[" << i << "] : " << arr[i] ;
-        cout << "\n" ;
+        cout << "Array [" << i+1 << "] : " << arr[i] << endl ;
     }
-
 }
-
 
 int main() 
 {
-    srand ((unsigned) time (NULL)) ;
 
     string arr[100] ;
-    int arrlength = 0 ;
+    int arrLength ;
 
-    arrlength = ReadPositiveNumber("Please Enter Number Of Keys?") ;
+    arrLength = ReadPositiveNumber("Please, Enter Number Of Keys") ;
 
-    FillArrayWithKeys(arr , arrlength) ;
-
-    PrintStringArray(arr , arrlength) ;
+    FillArrayWithKeys(arr , arrLength) ;
+    PrintArray(arr , arrLength) ;
 
     return 0;
 }
