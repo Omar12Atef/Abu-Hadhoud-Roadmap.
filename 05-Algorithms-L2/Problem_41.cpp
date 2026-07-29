@@ -1,64 +1,58 @@
 #include <iostream>
 using namespace std;
 
-void FillArray(int arr[100] , int &arrLength)
+void ReadArray(int arr[100] , int &arrlength)
 {
-    cout << "Enter Arr Length : \n" ;
-    cin >> arrLength ;
+    cout << "Enter Array Length : " ;
+    cin >> arrlength ;
 
-    cout << "\nEnter " << arrLength << " Numbers : \n\n" ;
+    cout << "\nEnter " << arrlength << " Numbers : \n\n" ;
 
-    for (int i = 0 ; i < arrLength ; i++)
+    for (int i = 0 ; i < arrlength ; i++)
     {
         cout << "Element [" << i+1 << "] : " ;
         cin >> arr[i] ;
     }
 }
 
-bool IsArrayPalindrome(int arr[100] , int arrLength)
+bool IsArrayPalindrome(int arr[100] , int arrlength)
 {
-    for (int i = 0 ; i < arrLength ; i++)
+    for (int i = 0 ; i < arrlength ; i++)
     {
-        if (arr[i] != arr[arrLength - 1- i])
+        if (arr[i] != arr[arrlength - 1 - i])
         {
             return false ;
         }
     }
 
     return true ;
-
 }
 
-
-
-void printArray (int arr[100] , int arrLength)
+void PrintArray(int arr[100] , int arrlength)
 {
-    for (int i = 0 ; i < arrLength ; i++)
+    for (int i = 0 ; i < arrlength ; i++)
     {
         cout << arr[i] << " " ;
     }
 }
 
-
 int main() 
 {
-    int arr[100] , arrLength=0 ;
+    int arr[100] , arrlength = 0 ;
 
-    FillArray(arr , arrLength) ;
+    ReadArray(arr , arrlength) ;
 
-    cout << "\nArray 1 Elements : \n" ;
-    printArray(arr , arrLength) ;
+    cout << "\nArray Elements : \n" ;
+    PrintArray(arr , arrlength) ;
 
-    if (IsArrayPalindrome(arr  , arrLength))
+    if (IsArrayPalindrome(arr , arrlength))
     {
-        cout << "\n\nYes, Array is palindrome.\n" ;
+        cout << "\n\nYes, Array is Palindrome." ;
     }
     else
     {
-        cout << "\n\nNo, Array isn't palindrome.\n" ;
+        cout << "\n\nNo, Array isn't Palindrome." ;
     }
-
-
 
     return 0;
 }
