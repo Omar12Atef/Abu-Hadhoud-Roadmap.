@@ -61,7 +61,7 @@ int main()
     cout << "\nArray Elements :\n" ;
     PrintArray(arr , arrlength) ;
 
-    cout << "\n\nEven Numbers count is : " ;
+    cout << "\nPositive Numbers count is : " ;
     cout << PositiveNumbersCount(arr , arrlength) ;
 
     return 0;
