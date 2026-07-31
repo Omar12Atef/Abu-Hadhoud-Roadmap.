@@ -26,6 +26,14 @@ struct stGameResult
 } ;
 
 
+int RandomNumber(int From , int To)
+{
+    int random = rand() % (To - From + 1) + From ;
+
+    return random ;
+}
+
+
 int ReadHowManyRounds()
 {
     int Number = 0 ;
@@ -51,14 +59,6 @@ enGameChoice ReadPlayerChoise()
     } while (Choise < 1 || Choise > 3) ;
 
     return (enGameChoice) Choise ;
-}
-
-
-int RandomNumber (int From , int To)
-{
-    int random = rand() % (To - From + 1) + From ;
-
-    return random ;
 }
 
 
