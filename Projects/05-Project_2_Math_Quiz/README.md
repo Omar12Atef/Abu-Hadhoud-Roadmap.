@@ -1,152 +1,66 @@
 # 🧮 Math Quiz Game
 
-> A simple and interactive **Math Quiz Game** built with **C++** for practicing programming fundamentals and arithmetic skills.
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=cplusplus" alt="C++" />
+  <img src="https://img.shields.io/badge/Roadmap-Abu--Hadhoud-orange?style=for-the-badge" alt="Abu-Hadhoud Roadmap" />
+  <img src="https://img.shields.io/badge/Course-07%20Algorithms%20Level%201-green?style=for-the-badge" alt="Course 07" />
+</p>
 
 ---
 
-## ✨ Features
+## 📌 Overview
 
-- 🎯 Choose from **1 to 10 questions**
-- 📚 Four difficulty levels
+A console-based **Math Quiz Game** developed in **C++**.
+
+The application generates random arithmetic questions based on the selected **difficulty level** and **operation type**, evaluates the player's answers, and displays a detailed quiz summary at the end.
+
+This project was built to practice **problem solving**, **modular programming**, **structures**, **enumerations**, and **function decomposition**.
+
+---
+
+## 🛠️ Key Concepts Applied
+
+- **Structures (`struct`)** to organize question and quiz data.
+- **Enumerations (`enum`)** to represent difficulty levels and operation types.
+- **Modular Programming** by dividing the application into small reusable functions.
+- **Random Number Generation** using `rand()` and `srand()`.
+- **Control Flow** using loops and conditional statements.
+- **Input Validation** to ensure valid user input.
+- **Game Loop** allowing the player to replay the quiz multiple times.
+
+---
+
+## 🎮 Features
+
+- 🎯 Choose from **1–10** questions.
+- 📚 Four difficulty levels:
   - Easy
   - Medium
   - Hard
-  - Mix
-- ➕➖✖️➗ Five operation modes
+  - Mixed
+- ➕ Four arithmetic operations:
   - Addition
   - Subtraction
   - Multiplication
   - Division
   - Mixed Operations
-- 🎲 Randomly generated questions
-- ✅ Instant answer validation
-- 💡 Displays the correct answer if you are wrong
-- 📊 Final quiz report
-- 🔁 Play again as many times as you want
+- 🎲 Random question generation.
+- ✅ Instant answer validation.
+- 💡 Displays the correct answer when the player's answer is incorrect.
+- 📊 Final quiz summary including:
+  - Total questions
+  - Correct answers
+  - Wrong answers
+  - Difficulty level
+  - Operation type
+  - Pass / Fail result
+- 🔁 Play Again support.
 
 ---
 
-## 🛠️ Built With
+## 💻 How to Run
 
-- C++
-- Standard Template Library (STL)
-- Console Application
-
----
-
-## 📂 Project Structure
-
-```
-Math Quiz Game
-│
-├── Enums
-│   ├── Question Levels
-│   └── Operation Types
-│
-├── Structures
-│   ├── Question Information
-│   └── Quiz Information
-│
-├── Helper Functions
-│   ├── Random Number Generator
-│   ├── Calculator
-│   ├── Validation Functions
-│   └── Utility Functions
-│
-├── Quiz Functions
-│   ├── Generate Question
-│   ├── Play Quiz
-│   ├── Print Question
-│   └── Print Final Result
-│
-└── Main Function
-```
-
----
-
-## 🎮 Gameplay
-
-```
-How many Questions do you want to answer?
-
-5
-
-Question Level?
-
-1 - Easy
-2 - Medium
-3 - Hard
-4 - Mix
-
-Operation Type?
-
-1 - Add
-2 - Subtract
-3 - Multiply
-4 - Divide
-5 - Mix
-```
-
-Example:
-
-```
-Question [2/5]
-
-12 + 7 = ?
-
-19
-
-✔ Right Answer
-```
-
----
-
-## 📊 Final Result
-
-At the end of the quiz you'll see:
-
-- ✅ Number of Correct Answers
-- ❌ Number of Wrong Answers
-- 📚 Selected Difficulty
-- ➕ Selected Operation
-- 🎯 Pass / Fail Result
-
----
-
-## 🚀 Future Improvements
-
-- 🎨 Colored console output
-- 📈 Score percentage
-- ⏱️ Timer for each question
-- 💾 Save quiz history
-- 🏆 High score system
-- 📁 File handling
-- 🎵 Sound effects
-- 🖥️ GUI version
-
----
-
-## 📸 Preview
-
-```
-Question [4/10]
-
-48 * 7 = ?
-
-336
-
-✔ Right Answer
-```
-
----
-
-## 👨‍💻 Author
-
-**Eng. Omar Atef**
-
-Faculty of Engineering  
-Communications & Electronics Engineering
-
----
-
-⭐ If you like this project, don't forget to give it a star!
+1. Clone the repository.
+2. Open the project using any C++ IDE.
+3. Compile the source file.
+4. Run the executable and enjoy the quiz!
