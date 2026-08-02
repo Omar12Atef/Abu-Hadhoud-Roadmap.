@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=cplusplus" alt="C++" />
   <img src="https://img.shields.io/badge/Roadmap-Abu--Hadhoud-orange?style=for-the-badge" alt="Abu-Hadhoud Roadmap" />
-  <img src="https://img.shields.io/badge/Course-07%20Algorithms%20Level%201-green?style=for-the-badge" alt="Course 07" />
+  <img src="https://img.shields.io/badge/Course-05%20Algorithms%20L2-green?style=for-the-badge" alt="Course 05" />
 </p>
 
 ---
