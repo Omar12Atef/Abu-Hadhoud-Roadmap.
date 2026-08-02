@@ -1,126 +1,152 @@
-# Math Quiz Game (C++)
+# 🧮 Math Quiz Game
 
-A simple console-based Math Quiz Game written in C++.
+> A simple and interactive **Math Quiz Game** built with **C++** for practicing programming fundamentals and arithmetic skills.
 
-The program generates random math questions based on the difficulty level and operation type selected by the player, then calculates the final score and displays the result.
+---
 
-## Features
+## ✨ Features
 
-- Choose the number of questions (1–10).
-- Choose the difficulty level:
+- 🎯 Choose from **1 to 10 questions**
+- 📚 Four difficulty levels
   - Easy
   - Medium
   - Hard
   - Mix
-- Choose the operation type:
+- ➕➖✖️➗ Five operation modes
   - Addition
   - Subtraction
   - Multiplication
   - Division
   - Mixed Operations
-- Random question generation.
-- Instant feedback after each answer.
-- Displays the correct answer when the player's answer is wrong.
-- Final quiz summary:
-  - Number of questions
-  - Difficulty level
-  - Operation type
-  - Correct answers
-  - Wrong answers
-  - Pass / Fail result
-- Option to play again.
+- 🎲 Randomly generated questions
+- ✅ Instant answer validation
+- 💡 Displays the correct answer if you are wrong
+- 📊 Final quiz report
+- 🔁 Play again as many times as you want
 
-## Project Structure
+---
 
-### Enums
-
-- `enQuestionLevel`
-- `enOperationType`
-
-### Structures
-
-#### `stQuestionInfo`
-
-Stores information about a single question:
-
-- First number
-- Second number
-- Operation
-- Player answer
-- Correct answer
-- Whether the answer is correct
-
-#### `stQuizInfo`
-
-Stores the final quiz result:
-
-- Number of questions
-- Difficulty level
-- Operation type
-- Number of correct answers
-- Number of wrong answers
-- Pass/Fail status
-
-## Main Functions
-
-| Function | Description |
-|----------|-------------|
-| `randomnumber()` | Generates a random number within a given range. |
-| `ReadNumberOfQuestions()` | Reads the number of quiz questions. |
-| `ReadQuizLevel()` | Reads the selected difficulty level. |
-| `ReadOpType()` | Reads the selected operation type. |
-| `GetRandomNumberByLevel()` | Generates numbers according to the selected difficulty. |
-| `simpleCalculator()` | Performs the arithmetic operation. |
-| `FillQuestionInfo()` | Creates and prepares a quiz question. |
-| `PrintQuestionInfo()` | Displays a question. |
-| `FillQuiz()` | Builds the final quiz summary. |
-| `PrintQuiz()` | Displays the final result. |
-| `PlayQuiz()` | Runs the complete quiz. |
-| `StartQuiz()` | Allows the user to replay the game. |
-
-## Technologies Used
+## 🛠️ Built With
 
 - C++
-- Standard Library
+- Standard Template Library (STL)
 - Console Application
 
-## Sample Output
+---
 
-```text
-How many Questions do you want to answer? 5
+## 📂 Project Structure
 
-Enter Question Level:
+```
+Math Quiz Game
+│
+├── Enums
+│   ├── Question Levels
+│   └── Operation Types
+│
+├── Structures
+│   ├── Question Information
+│   └── Quiz Information
+│
+├── Helper Functions
+│   ├── Random Number Generator
+│   ├── Calculator
+│   ├── Validation Functions
+│   └── Utility Functions
+│
+├── Quiz Functions
+│   ├── Generate Question
+│   ├── Play Quiz
+│   ├── Print Question
+│   └── Print Final Result
+│
+└── Main Function
+```
+
+---
+
+## 🎮 Gameplay
+
+```
+How many Questions do you want to answer?
+
+5
+
+Question Level?
+
 1 - Easy
 2 - Medium
 3 - Hard
 4 - Mix
 
-Enter Operation Type:
+Operation Type?
+
 1 - Add
 2 - Subtract
 3 - Multiply
 4 - Divide
 5 - Mix
-
-Question [1/5]
-
-7 + 3 = ?
-
-10
-
-Right Answer.
 ```
 
-## Future Improvements
+Example:
 
-- Improve division questions to avoid decimal answers.
-- Prevent division by zero.
-- Color the console output.
-- Show the percentage score.
-- Display the time taken to complete the quiz.
-- Save quiz history to a file.
-- Improve the user interface.
+```
+Question [2/5]
 
-## Author
+12 + 7 = ?
+
+19
+
+✔ Right Answer
+```
+
+---
+
+## 📊 Final Result
+
+At the end of the quiz you'll see:
+
+- ✅ Number of Correct Answers
+- ❌ Number of Wrong Answers
+- 📚 Selected Difficulty
+- ➕ Selected Operation
+- 🎯 Pass / Fail Result
+
+---
+
+## 🚀 Future Improvements
+
+- 🎨 Colored console output
+- 📈 Score percentage
+- ⏱️ Timer for each question
+- 💾 Save quiz history
+- 🏆 High score system
+- 📁 File handling
+- 🎵 Sound effects
+- 🖥️ GUI version
+
+---
+
+## 📸 Preview
+
+```
+Question [4/10]
+
+48 * 7 = ?
+
+336
+
+✔ Right Answer
+```
+
+---
+
+## 👨‍💻 Author
 
 **Eng. Omar Atef**
+
+Faculty of Engineering  
+Communications & Electronics Engineering
+
+---
+
+⭐ If you like this project, don't forget to give it a star!
