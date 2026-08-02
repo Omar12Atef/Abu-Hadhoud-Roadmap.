@@ -1,9 +1,3 @@
-![Language](https://img.shields.io/badge/Language-C%2B%2B-blue)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-green)
-
-
-
 # 🧮 Math Quiz Game
 
 > A simple and interactive **Math Quiz Game** built with **C++** for practicing programming fundamentals and arithmetic skills.
